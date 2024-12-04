@@ -1,0 +1,90 @@
+/* Footer General Styles */
+.footer {
+  background-color: var(--color-black);
+  padding: 80px 20px;
+  color: var(--color-white-bg);
+}
+
+.footerContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+}
+.footerColumn h3 {
+  margin: 10px 0 10px 0;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-20);
+  line-height: var(--line-height-28);
+}
+.footerColumn p {
+  margin: 16px 0;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-24);
+}
+.myAccount li {
+  margin: 16px 0;
+}
+
+.subscribeQr {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.qrCode {
+  height: 100%;
+}
+.qrCode img {
+  max-width: 100%;
+  height: 100%;
+}
+.appLinks {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.appLinks img {
+  max-width: 100%;
+}
+
+/* Social Media Links */
+.socialLinks {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.socialLinks a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .footerContainer {
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+  }
+}
+
+@media (max-width: 576px) {
+  .footerContainer {
+    grid-template-columns: 1fr;
+    gap: 0; /* One column for small screens */
+  }
+  .footerColumn {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .socialLinks {
+    padding: 30px;
+    justify-content: space-evenly;
+  }
+}

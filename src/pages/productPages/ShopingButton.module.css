@@ -1,0 +1,122 @@
+.ProductDetails_Shopping {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+.ProductDetails_ShoppingCount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ProductDetails_ShoppingCountSquare {
+  border: 1px solid var(--color-border-light);
+  border-radius: 4px;
+  width: 31px;
+  height: 34px;
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-24);
+  line-height: var(--line-height-28);
+  color: var(--color-black);
+  background-color: var(--color-white-bge);
+}
+.ProductDetails_ShoppingCountSquare:first-child {
+  border: 1px solid var(--color-border-light);
+  border-radius: 4px 0 0 4px;
+}
+.ProductDetails_ShoppingCountSquare:last-child {
+  border: 1px solid var(--color-border-light);
+  border-radius: 0 4px 4px 0;
+}
+.ProductDetails_ShoppingCountRectangle {
+  border-top: 1px solid var(--color-border-light);
+  border-bottom: 1px solid var(--color-border-light);
+  width: 70px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-24);
+  line-height: var(--line-height-28);
+  color: var(--color-black);
+}
+
+.ProductDetails_ShoppingCountSquare:hover {
+  background-color: var(--color-red);
+  cursor: pointer;
+  color: var(--color-white-bg);
+}
+
+.ProductDetails_ShoppingButton {
+  padding: 8px 24px;
+  background-color: var(--color-red);
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-24);
+  color: var(--color-white-bg);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color var(--transition-time) ease;
+}
+
+.ProductDetails_ShoppingButton:hover {
+  background-color: var(--color-red-hover);
+}
+.ProductDetails_ShoppingButton:disabled {
+  background-color: var(--color-shadow-light);
+  color: var(--color-light-gray);
+  cursor: not-allowed;
+  opacity: 0.7;
+  position: relative;
+} /* Tooltip hint for better UX */
+.ProductDetails_ShoppingButton:disabled::after {
+  content: "Add items to enable";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+  background-color: var(--tooltip-background);
+  color: var(--tooltip-text-color);
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.ProductDetails_ShoppingButton:disabled:hover::after {
+  opacity: 1;
+}
+.ProductDetails_ShoppingWishListSquare {
+  border: 1px solid var(--color-border-light);
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-white-bg);
+  transition: background-color var(--transition-time) ease;
+}
+.ProductDetails_ShoppingWishListSquare:hover {
+  background-color: var(--color-red);
+}
+.ProductDetails_ShoppingWishListSquare button {
+  background-color: var(--color-white-bg);
+}
+.ProductDetails_ShoppingWishListSquare:hover img {
+  filter: invert(100%);
+  transition: color var(--transition-time) ease;
+}
+.ProductDetails_ShoppingWishListSquare:hover button {
+  background-color: inherit;
+}
+@media (max-width: 992px) {
+  .ProductDetails_Shopping {
+    flex-wrap: wrap;
+    /* justify-content: center; */
+  }
+}

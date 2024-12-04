@@ -1,0 +1,84 @@
+.signUpContainer h2 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: var(--font-size-36);
+  font-weight: var(--font-weight-500);
+  line-height: var(--line-height-30);
+  margin-bottom: 24px;
+}
+.signUpText {
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-400);
+  line-height: var(--line-height-24);
+  margin-bottom: 48px;
+}
+.formGroup input {
+  margin-bottom: 40px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid var(--color-shadow-light);
+}
+
+.btnCreateAccount {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 20px 42px;
+  background-color: var(--color-red);
+  color: var(--color-white-bg);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-500);
+  line-height: var(--line-height-24);
+  transition: all var(--transition-time) ease;
+}
+.btnSignUpWithGoogle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 42px;
+  margin-top: 16px;
+  background-color: var(--color-white-bg);
+  color: var(--color-black);
+  border: 1px solid var(--color-black);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all var(--transition-time) ease;
+}
+.btnCreateAccount:hover,
+.btnSignUpWithGoogle:hover {
+  background-color: var(--color-black);
+  color: var(--color-white-bg);
+}
+.btnSignUpWithGoogle p {
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-400);
+  line-height: var(--line-height-24);
+  margin-left: 16px;
+}
+.btnSignUpWithGoogle img {
+  width: 24px;
+  height: 24px;
+}
+.signUpContainer p:not(:first-of-type) {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.signUpContainer a {
+  color: var(--color-red);
+  text-decoration: none;
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-500);
+  line-height: var(--line-height-24);
+}
+
+.signUpContainer a:hover {
+  text-decoration: underline;
+}
+.errorMessage {
+  color: var(--color-red);
+}

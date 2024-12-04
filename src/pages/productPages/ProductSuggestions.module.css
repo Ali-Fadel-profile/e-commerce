@@ -1,0 +1,104 @@
+/* General styles for the container */
+.productSuggestions {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin: 140px auto;
+}
+.productSuggestions_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-black);
+  margin-bottom: 60px;
+}
+.productSuggestions_title {
+  display: flex;
+  align-items: center;
+}
+.productSuggestions_square {
+  width: 20px;
+  height: 40px;
+  background-color: var(--color-red);
+  margin-right: 15px;
+  border-radius: 4px;
+}
+.productSuggestions_top p {
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-20);
+  line-height: var(--line-height-26);
+}
+.productSuggestions_top button {
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-24);
+  border: 1px solid var(--color-border-light);
+  border-radius: 4px;
+  padding: 16px 48px;
+  background-color: var(--color-white-bg);
+  color: var(--color-text-dark);
+  cursor: pointer;
+  transition: all var(--transition-time) ease;
+}
+
+.productSuggestions_top button:hover {
+  transform: translateY(-7px);
+  border-color: var(--color-black);
+  box-shadow: 0 4px 8px var(--color-shadow-light);
+}
+.cardContent {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 270px;
+  gap: 20px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.cardContent > * {
+  scroll-snap-align: start;
+}
+.cardContent::-webkit-scrollbar {
+  height: 8px;
+}
+
+.cardContent::-webkit-scrollbar-thumb {
+  background-color: var(--color-scrollbar-thumb);
+  border-radius: 4px;
+}
+
+.cardContent::-webkit-scrollbar-track {
+  background-color: var(--color-scrollbar-track);
+}
+
+/* Responsive container styles */
+@media (min-width: 576px) {
+  .productSuggestions {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .productSuggestions {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .productSuggestions {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .productSuggestions {
+    max-width: 1180px;
+  }
+}

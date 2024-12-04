@@ -1,0 +1,118 @@
+.newArrival {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  height: 600px;
+  font-family: var(--font-family-primary);
+  flex: 1;
+}
+
+.newArrival__featured {
+  position: relative;
+  background-color: var(--color-black);
+  padding: 30px;
+  flex-basis: 50%;
+}
+
+.newArrival__right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-basis: 50%;
+  flex-shrink: 0;
+}
+.newArrival__rightTop,
+.newArrival__rightItem {
+  background-color: var(--color-black);
+  padding: 30px;
+  position: relative;
+  height: 290px;
+  width: 100%;
+}
+.newArrival__rightTop {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.newArrival__rightBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.newArrival__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-black);
+  opacity: 60%;
+  transition: opacity var(--transition-time) ease;
+}
+.newArrival__button:hover {
+  opacity: 100%;
+}
+.newArrival__image {
+  max-width: 100%;
+  max-height: 600px;
+  transition: transform var(--transition-time) ease,
+    opacity var(--transition-time) ease;
+}
+
+.newArrival__details {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 0 32px 32px;
+  max-width: 260px;
+  color: var(--color-white-bg);
+  text-align: start;
+}
+.newArrival__details h3 {
+  font-weight: var(--font-weight-600);
+  font-size: var(--font-size-24);
+  line-height: var(--line-height-24);
+}
+.newArrival__details p {
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-14);
+  line-height: var(--line-height-21);
+  margin: 16px 0;
+}
+.shopNow {
+  text-align: start;
+  background-color: inherit;
+  color: var(--color-white-bg);
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-24);
+  text-decoration: underline;
+  transition: transform var(--transition-time) ease;
+}
+.shopNow:hover {
+  transform: translateX(10px);
+}
+
+/* Responsive Styling */
+@media (max-width: 992px) {
+  .newArrival {
+    flex-direction: column;
+    height: auto;
+  }
+  .newArrival__image {
+    max-height: 300px;
+  }
+  .newArrival__featured,
+  .newArrival__rightItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .newArrival__rightBottom {
+    flex-direction: column;
+  }
+}

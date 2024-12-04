@@ -1,0 +1,55 @@
+/* ProductCardSkeleton.module.css */
+.skeletonCard {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-border-light);
+  padding: 16px;
+  border-radius: 8px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.skeletonImage {
+  height: 230px;
+  background: var(--color-light-gray);
+  border-radius: 8px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.skeletonContent {
+  padding-top: 10px;
+}
+
+.skeletonTitle,
+.skeletonPrice,
+.skeletonRating {
+  height: 20px;
+  margin: 10px 0;
+  background: var(--color-light-gray);
+  border-radius: 4px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.skeletonTitle {
+  width: 70%;
+}
+
+.skeletonPrice {
+  width: 50%;
+}
+
+.skeletonRating {
+  width: 30%;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: var(--color-light-gray);
+  }
+  50% {
+    background-color: var(--color-card-bg);
+  }
+  100% {
+    background-color: var(--color-light-gray);
+  }
+}

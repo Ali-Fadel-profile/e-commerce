@@ -1,0 +1,28 @@
+.checkOutProducts_container {
+  font-family: var(--font-family-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 15px;
+  margin-top: 32px;
+}
+.checkOutProducts_Product {
+  display: flex;
+  align-items: center;
+}
+.checkOutProducts_Product img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  margin-right: 15px;
+}
+.checkOutProducts_Product p {
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-24);
+  color: var(--color-black);
+}
+.checkOutProducts_Product span {
+  margin: 0 5px;
+}

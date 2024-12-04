@@ -1,0 +1,131 @@
+/* General Styles */
+.checkOut {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 140px;
+}
+.fullForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+/* Billing Form */
+.billingDetails {
+  width: 100%;
+}
+.billingDetails_title {
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-36);
+  line-height: var(--line-height-30);
+  color: var(--color-black);
+  margin-bottom: 16px;
+}
+
+.billingDetails_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.billingDetails_formLabel {
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-24);
+  color: var(--color-black);
+  opacity: 40%;
+  margin: 32px 0 8px 0;
+}
+
+.billingDetails_form input {
+  padding: 10px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 4px;
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-24);
+  color: var(--color-black);
+  background-color: var(--color-card-bg);
+}
+.error {
+  color: var(--color-red);
+}
+
+/* Checkout Section */
+.checkoutDetails {
+  margin-top: 80px;
+  max-width: 100%;
+  flex: 1;
+}
+.paymentForm {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 0;
+  gap: 32px;
+}
+.paymentOption {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.paymentOption img {
+  max-width: 190px;
+  height: auto;
+  object-fit: contain;
+}
+.paymentOption_radio {
+  width: 24px;
+  height: 24px;
+}
+.placeOrderButton {
+  padding: 16px 48px;
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-24);
+  color: var(--color-white-bg);
+  background-color: var(--color-red);
+  border-radius: 4px;
+  transition: background-color var(--transition-time) ease;
+}
+.placeOrderButton:hover {
+  background-color: var(--color-black);
+}
+/* Responsive container styles */
+@media (min-width: 576px) {
+  .checkOut {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .checkOut {
+    max-width: 720px;
+  }
+  .fullForm {
+    flex-wrap: nowrap;
+  }
+  .billingDetails {
+    width: 300px;
+  }
+  .checkoutDetails {
+    max-width: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .checkOut {
+    max-width: 960px;
+  }
+  .checkoutDetails {
+    min-width: 400px;
+  }
+  .billingDetails {
+    width: 470px;
+  }
+}
+@media (min-width: 1200px) {
+  .checkOut {
+    max-width: 1180px;
+  }
+}

@@ -1,0 +1,50 @@
+.AuthLayoutauthContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding-right: 50px;
+  padding-top: 100px;
+  margin: 40px 0 140px 0;
+}
+
+.authImage {
+  flex: 1%;
+  flex-basis: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.authImage img {
+  max-width: 100%;
+  object-fit: contain;
+}
+.authForm {
+  flex: 1%;
+  flex-basis: 35%;
+  text-align: start;
+}
+@media (max-width: 1200px) {
+  .AuthLayoutauthContainer {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .AuthLayoutauthContainer {
+    flex-direction: column-reverse;
+    padding-right: 0px;
+  }
+  .authForm {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .authForm {
+    max-width: 100%;
+  }
+}

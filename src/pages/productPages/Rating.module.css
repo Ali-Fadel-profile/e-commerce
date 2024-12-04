@@ -1,0 +1,14 @@
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.stars {
+  display: flex;
+}
+
+.rateNumber {
+  margin-left: 8px;
+  color: var(--color-black);
+  opacity: 50%;
+}

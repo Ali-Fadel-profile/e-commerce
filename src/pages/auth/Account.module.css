@@ -1,0 +1,155 @@
+.accountSection {
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+  font-family: var(--font-family-primary);
+  color: var(--color-black);
+}
+
+/* Navigation Section */
+.navSection {
+  width: 25%;
+}
+
+.navSection_title,
+.navSection_link,
+.formSection_title,
+.cancelButton,
+.saveButton {
+  margin-bottom: 16px;
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-24);
+}
+.navSection ul {
+  list-style-type: none;
+  padding: 0 0 24px 30px;
+}
+.navSection_link {
+  font-weight: var(--font-weight-400);
+  color: var(--color-black-solid);
+  opacity: 50%;
+  margin-bottom: 8px;
+  transition: all var(--transition-time) ease;
+}
+.navSection_link:hover {
+  color: var(--color-red);
+  opacity: 100%;
+}
+
+/* Form Section */
+.formSection {
+  width: 70%;
+  padding: 40px 80px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 var(--color-shadow-light),
+    0 1px 2px -1px var(--color-shadow-light);
+}
+
+.formSection_title {
+  color: var(--color-red);
+  font-size: var(--font-size-20);
+  margin-bottom: 16px;
+}
+
+.formGroup {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+}
+.inputGroup {
+  flex: 1;
+}
+.inputGroup label,
+.inputGroup input,
+.passwordGroup input,
+.passwordGroup label,
+.errorMessage {
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-24);
+}
+
+.inputGroup input,
+.passwordGroup input {
+  margin: 8px 0 24px 0;
+  padding: 13px 16px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--color-card-bg);
+}
+.inputGroup {
+  opacity: 50%;
+}
+.passwordGroup input {
+  margin: 16px 0px 0px 0px;
+}
+/* Button Group */
+.buttonGroup {
+  display: flex;
+  justify-content: flex-end;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.cancelButton {
+  background: none;
+  font-weight: var(--font-weight-400);
+  border: none;
+  cursor: pointer;
+  color: var(--color-black);
+}
+
+.saveButton {
+  background-color: var(--color-red);
+  font-weight: var(--font-weight-400);
+  color: white;
+  padding: 16px 48px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color var(--transition-time) ease;
+}
+
+.saveButton:hover {
+  background-color: var(--color-black);
+}
+
+/* Responsive Design */
+
+@media (max-width: 992px) {
+  .formSection {
+    padding: 20px 40px;
+  }
+}
+@media (max-width: 767px) {
+  .accountSection {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 5%;
+    font-family: var(--font-family-primary);
+    color: var(--color-blackr);
+  }
+  .navSection,
+  .formSection {
+    width: 100%;
+  }
+  .navSection {
+    padding: 0 40px;
+
+    margin-bottom: 40px;
+  }
+  .navSection ul {
+    padding: 0;
+  }
+  .formGroup {
+    flex-direction: column;
+    gap: 0;
+  }
+  .saveButton {
+    padding: 8px 24px;
+    font-size: var(--font-size-14);
+  }
+}

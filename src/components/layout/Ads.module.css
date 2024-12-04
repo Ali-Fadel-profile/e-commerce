@@ -1,0 +1,9 @@
+.ads {
+  padding: 15px 0;
+  text-align: center;
+  color: var(--color-white-text);
+  background-color: var(--color-black);
+}
+.ads a {
+  text-decoration: underline;
+}

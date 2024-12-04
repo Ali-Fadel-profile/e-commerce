@@ -1,0 +1,32 @@
+.managerCard {
+  width: 100%;
+  height: 100%;
+}
+.managerCard img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.managerCard h3 {
+  margin-top: 16px;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-600);
+  font-size: var(--font-size-32);
+  line-height: var(--line-height-30);
+}
+.managerCard P {
+  margin: 8px 0 16px 0;
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-24);
+}
+.socialLinks {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.socialLinks img {
+  width: 20px;
+  height: auto;
+}

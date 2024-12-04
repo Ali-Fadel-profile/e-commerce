@@ -1,0 +1,76 @@
+.orders {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 140px;
+  margin-bottom: 140px;
+  font-family: var(--font-family-primary);
+}
+.ordersContainer {
+  text-align: center;
+}
+.ordersContainer_title {
+  font-weight: var(--font-weight-600);
+  font-size: var(--font-size-36);
+  line-height: var(--line-height-24);
+  margin: 24px 0;
+}
+.ordersContainer_text {
+  color: var(--color-red);
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-24);
+  margin-bottom: 24px;
+}
+.emptyCart {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.shopNowButton {
+  margin-bottom: 24px;
+  background-color: var(--color-red);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.shopNowButton:hover {
+  background-color: var(--color-black);
+}
+@media (min-width: 576px) {
+  .orders {
+    max-width: 540px;
+  }
+  .ordersContainer {
+    text-align: center;
+    padding: 24px 40px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 var(--color-shadow-light),
+      0 1px 2px -1px var(--color-shadow-light);
+  }
+}
+
+@media (min-width: 768px) {
+  .orders {
+    max-width: 720px;
+  }
+  .ordersContainer {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 992px) {
+  .orders {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .orders {
+    max-width: 1180px;
+  }
+}

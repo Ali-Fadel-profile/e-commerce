@@ -1,0 +1,89 @@
+.cartRow {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 40px;
+  box-shadow: 0 1px 3px 0 var(--color-shadow-light),
+    0 1px 2px -1px var(--color-shadow-light);
+}
+.cartRow__product {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+.cartRow__productCancelIcon {
+  background-color: inherit;
+  width: 24px;
+  height: auto;
+  margin-right: 5px;
+  text-align: start;
+}
+.cartRow__productCancelIcon img {
+  width: 24px;
+  height: 24px;
+}
+.cartRow__product img {
+  flex-shrink: 1;
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+.cartRow__text {
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-24);
+}
+.cartRow__quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--color-dropdown-bg);
+  border-radius: 4px;
+  width: 72px;
+  height: 44px;
+  padding: 6px 12px;
+  gap: 15px;
+  flex: 1;
+}
+.cartRow__quantityControlButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.cartRow__quantityButton {
+  background-color: inherit;
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 1200px) {
+  .cartRow__product p {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .cartRow {
+    margin-top: 30px;
+    padding: 14px 20px;
+  }
+  .cartRow__text {
+    font-size: var(--font-size-14);
+  }
+  .cartRow__quantity {
+    width: 50px;
+    height: auto;
+    padding: 3px 6px;
+    gap: 8px;
+  }
+  .cartRow__product {
+    width: 42px;
+    height: 42px;
+  }
+}

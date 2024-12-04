@@ -1,0 +1,101 @@
+/* General Styling */
+.promoCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 27px;
+  background-color: var(--color-black);
+  padding: 40px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  font-family: var(--font-family-primary);
+}
+
+.promoCard__details {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 30px 0 30px 0;
+}
+
+.promoCard__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-black);
+}
+
+.promoCard__category {
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-600);
+  line-height: var(--line-height-20);
+  color: var(--color-green);
+  margin-bottom: 32px;
+}
+
+.promoCard__description {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-48);
+  font-weight: var(--font-weight-600);
+  line-height: var(--line-height-60);
+  color: var(--color-white-bg);
+  margin-bottom: 32px;
+  text-align: start;
+}
+
+.promoCard__detailsButton {
+  background-color: var(--color-green);
+  color: var(--color-white-bg);
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-500);
+  line-height: var(--line-height-24);
+  padding: 16px 48px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+  margin-top: 40px;
+}
+
+.promoCard__detailsButton:hover {
+  background-color: var(--color-green-hover);
+}
+
+.promoCard__image {
+  max-width: 100%;
+  transform: scale(1);
+  transition: transform var(--transition-time) ease;
+}
+.promoCard__image:hover {
+  transform: scale(1.1);
+}
+/* Responsive Code */
+
+@media (max-width: 991px) {
+  .promoCard {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .promoCard__details {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .promoCard__description {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .promoCard__description {
+    font-size: var(--font-size-36);
+  }
+}

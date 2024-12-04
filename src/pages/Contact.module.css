@@ -1,0 +1,128 @@
+.contactUs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+}
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 4px;
+  padding: 50px 35px 35px 35px;
+  gap: 20px;
+  width: 30%;
+  box-shadow: 0 1px 3px 0 var(--color-shadow-light),
+    0 1px 2px -1px var(--color-shadow-light);
+}
+.leftColumn p {
+  color: var(--color-black);
+  font-size: var(--font-size-14);
+  font-weight: var(--font-weight-400);
+  line-height: var(--line-height-21);
+}
+.underline {
+  width: 100%;
+  border-top: 2px solid var(--color-shadow-light);
+}
+.contactRow1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contactRow1 img,
+.contactRow2 img {
+  width: 40px;
+  height: 40px;
+}
+
+.contactRow2 p {
+  margin: 16px 0;
+}
+.rightColumn {
+  padding: 50px 35px;
+  box-shadow: 0 1px 3px 0 var(--color-shadow-light),
+    0 1px 2px -1px var(--color-shadow-light);
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 65%;
+  height: 100%;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.inputRow {
+  display: flex;
+  gap: 15px;
+}
+.inputRow input,
+.textAreaRow textarea,
+.submitButton {
+  color: var(--color-black);
+  font-size: var(--font-size-14);
+  font-weight: var(--font-weight-400);
+  line-height: var(--line-height-24);
+}
+.inputRow input {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  background-color: var(--color-light-bg);
+  border-radius: 5px;
+}
+
+.textAreaRow textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: var(--color-light-bg);
+
+  height: 200px;
+  border-radius: 5px;
+  resize: none;
+}
+
+.submitButton {
+  padding: 16px 48px;
+  background-color: var(--color-red);
+  color: var(--color-white-bg);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-16);
+  transition: background-color var(--transition-time) ease;
+  margin: 0 0 0 auto;
+}
+
+.submitButton:hover {
+  background-color: var(--color-black);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .inputRow input {
+    padding: 15px 5px;
+  }
+}
+@media (max-width: 768px) {
+  .contactUs {
+    flex-direction: column;
+  }
+  .leftColumn,
+  .rightColumn {
+    width: 100%;
+  }
+
+  .inputRow {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,91 @@
+/* Container for the about page */
+.aboutContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: var(--font-family-primary);
+}
+.aboutContainer section {
+  margin-bottom: 140px;
+}
+/* Our Story Section */
+
+.storySection {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 140px;
+  gap: 75px;
+}
+
+.storyContent {
+  padding: 137px 0 136px 135px;
+  color: var(--color-black);
+  width: 50%;
+}
+.storyContent h2 {
+  font-weight: var(--font-weight-600);
+  font-size: var(--font-size-54);
+  line-height: var(--line-height-50);
+}
+.storyContent p {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-24);
+}
+.storyContent p:first-of-type {
+  margin: 40px 0 24px 0;
+}
+.storyBackground {
+  flex: 1;
+}
+
+.servicesSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 88px;
+  width: 100%;
+}
+.servicesSection:first-of-type {
+  gap: 30px;
+}
+/* Managers Section */
+.managersSection {
+  margin-bottom: 50px;
+}
+.managerGallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.managerNav {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.navCircle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: var(--color-border-light);
+}
+
+@media (max-width: 768px) {
+  .storyBackground {
+    display: none;
+  }
+  .storyContent {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .storyContent {
+    padding: 37px 0 36px 35px;
+  }
+}

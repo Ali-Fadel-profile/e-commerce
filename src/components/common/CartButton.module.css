@@ -1,0 +1,34 @@
+.productCard__addToCart,
+.productCard__RemoveFromCart {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-color: var(--color-black);
+  color: var(--color-white-bg);
+  text-align: center;
+  padding: 10px;
+  transform: translateY(100%);
+  transition: transform var(--transition-time) ease,
+    opacity var(--transition-time) ease,
+    background-color var(--transition-time) ease;
+  opacity: 0;
+  visibility: hidden;
+}
+.productCard__RemoveFromCart {
+  background-color: var(--color-red);
+  transition: background-color var(--transition-time) ease;
+  transform: translateY(100%);
+  transition: transform var(--transition-time) ease,
+    opacity var(--transition-time) ease,
+    background-color var(--transition-time) ease;
+  opacity: 0;
+  visibility: hidden;
+}
+.productCard__addToCart:hover {
+  background-color: var(--color-black-hover);
+}
+.productCard__RemoveFromCart:hover {
+  background-color: var(--color-red-hover);
+}

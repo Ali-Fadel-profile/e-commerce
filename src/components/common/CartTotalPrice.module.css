@@ -1,0 +1,29 @@
+.cartPrice__text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0 16px 0;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-24);
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--color-black);
+}
+.cartPrice__DiscountedPrice {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-400);
+  font-size: var(--font-size-16);
+  line-height: var(--line-height-24);
+}
+.DiscountPrice_discount {
+  color: var(--color-red);
+}
+.DiscountPrice_total {
+  color: var(--color-black);
+  opacity: 0.5;
+  text-decoration: line-through;
+}
