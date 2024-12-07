@@ -4,15 +4,10 @@ import { TbMoneybag } from "react-icons/tb";
 import { IoBagHandleOutline } from "react-icons/io5";
 import { CiShop } from "react-icons/ci";
 import { LuCircleDollarSign } from "react-icons/lu";
-import twitter from "@images/about/twitter.png";
-import instagrem from "@images/about/instagrem.png";
-import linkedin from "@images/about/linkedin.png";
 import Location from "@components/layout/Location";
 import FeaturesCard from "./FeaturesCard";
-import MangerCard from "./MangerCard";
-import mangerImage1 from "@images/about/manger1.png";
-import mangerImage2 from "@images/about/manger2.png";
 import Services from "@components/common/Services";
+import ManagersSection from "./ManagersSection";
 
 function About() {
   return (
@@ -66,44 +61,7 @@ function About() {
         </section>
 
         {/* Our Managers Section */}
-        <section className={styles.managersSection}>
-          {" "}
-          <div className={styles.managerGallery}>
-            {" "}
-            <MangerCard
-              twitter={twitter}
-              instagrem={instagrem}
-              linkedin={linkedin}
-              name={"will Smith"}
-              position={"Managing Director"}
-              image={mangerImage2}
-            />{" "}
-            <MangerCard
-              twitter={twitter}
-              instagrem={instagrem}
-              linkedin={linkedin}
-              name={"Tom Cruise"}
-              position={"Founder & Chairman"}
-              image={mangerImage1}
-            />{" "}
-            <MangerCard
-              twitter={twitter}
-              instagrem={instagrem}
-              linkedin={linkedin}
-              name={"Tom Hankis"}
-              position={"Product Designer"}
-              image={mangerImage2}
-            />{" "}
-          </div>
-          <div className={styles.managerNav}>
-            <span className={styles.navCircle}></span>
-            <span className={styles.navCircle}></span>{" "}
-            <span className={styles.navCircle}></span>
-            <span className={styles.navCircle}></span>
-            <span className={styles.navCircle}></span>
-          </div>
-        </section>
-
+        <ManagersSection />
         {/* Our Services */}
         <section className={styles.servicesSection}>
           <Services />

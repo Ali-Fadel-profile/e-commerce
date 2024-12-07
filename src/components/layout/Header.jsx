@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "@images/Logo.svg";
 import wishlistOff from "@images/icons/wishList.svg";
@@ -20,7 +20,29 @@ import SearchForm from "./SearchForm";
 function Header() {
   const [isCollapsed, setIsCollapsed] = useState(true);
   const [isDroppedDown, setIsDroppedDown] = useState(true);
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const { user, wishlist, cart } = useAuth();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY) {
+        setIsHeaderVisible(false);
+      } else {
+        setIsHeaderVisible(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
 
   const toggleNavbar = () => {
     setIsCollapsed(!isCollapsed);
@@ -41,7 +63,12 @@ function Header() {
   };
 
   return (
-    <header className={styles.header}>
+    <header
+      className={`${styles.header} ${
+        isHeaderVisible ? styles.visible : styles.hidden
+      }`}
+    >
+      {" "}
       <Ads />
       <nav className={styles.navbar}>
         <div className={styles.navbarContainer}>

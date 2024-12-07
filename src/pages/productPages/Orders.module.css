@@ -3,7 +3,7 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 140px;
+  margin-top: 185px;
   margin-bottom: 140px;
   font-family: var(--font-family-primary);
 }
@@ -13,7 +13,7 @@
 .ordersContainer_title {
   font-weight: var(--font-weight-600);
   font-size: var(--font-size-36);
-  line-height: var(--line-height-24);
+  line-height: 1.1;
   margin: 24px 0;
 }
 .ordersContainer_text {
