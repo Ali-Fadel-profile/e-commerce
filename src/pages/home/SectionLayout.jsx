@@ -1,6 +1,6 @@
 import styles from "./SectionLayout.module.css";
 import { Link } from "react-router-dom";
-import rightArrow from "@images/home/LeftArrow.svg";
+import rightArrow from "@images/home/leftArrow.svg";
 import leftArrow from "@images/home/rightArrow.png";
 import FlashSaleTimer from "./FlashSaleTimer.jsx";
 import { flashSaleEndTime } from "@products/productsObject.jsx";
