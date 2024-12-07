@@ -1,5 +1,5 @@
 import WishlistButton from "@components/common/WishlistButton";
-import useAddToCart from "../../hooks/useAddToCart";
+import useAddToCart from "@hooks/useAddToCart";
 import { useNavigate } from "react-router-dom";
 import useScrollToTop from "@hooks/useScrollToTop";
 import styles from "./ShopingButton.module.css";

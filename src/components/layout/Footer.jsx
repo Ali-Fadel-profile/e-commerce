@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
-import SubscribeArrow from "@images/icons/ECommerceFooter/send-email.png";
 import QRCode from "@images/icons/ECommerceFooter/Qrcode.jpg";
 import PlayStore from "@images/icons/ECommerceFooter/android.jpg";
 import AppStore from "@images/icons/ECommerceFooter/appstore.jpg";
-import Facebook from "@images/icons/ECommerceFooter/icon-Facebook.png";
+import Facebook from "@images/icons/ECommerceFooter/Icon-Facebook.png";
 import instagrem from "@images/icons/ECommerceFooter/instagrem.png";
-import Linkedin from "@images/icons/ECommerceFooter/linkedin.png";
+import Linkedin from "@images/icons/ECommerceFooter/linkedIn.png";
 import Twitter from "@images/icons/ECommerceFooter/icon-Twitter.png";
 import useScrollToTop from "@hooks/useScrollToTop";
 import styles from "./Footer.module.css";

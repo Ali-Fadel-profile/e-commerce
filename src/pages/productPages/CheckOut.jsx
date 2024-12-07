@@ -1,7 +1,7 @@
 import Location from "@components/layout/Location";
 import styles from "./CheckOut.module.css";
 import CartTotalPrice from "@components/common/CartTotalPrice";
-import paymentMethods from "@images/payment-methods.png";
+import paymentMethods from "@images/Payment-methods.png";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import useScrollToTop from "@hooks/useScrollToTop";

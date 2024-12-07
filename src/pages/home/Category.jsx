@@ -1,6 +1,6 @@
 import SectionLayout from "./SectionLayout";
 import styles from "./Category.module.css";
-import phones from "@images/home/cellphone.svg";
+import phones from "@images/home/cellPhone.svg";
 import computer from "@images/home/computer.svg";
 import smartWatch from "@images/home/smartWatch.svg";
 import camera from "@images/home/camera.svg";

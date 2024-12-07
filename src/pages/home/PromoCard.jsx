@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import styles from "./PromoCard.module.css";
 import FlashSaleTimer from "./FlashSaleTimer.jsx";
 import { flashSaleEndTime } from "@products/productsObject.jsx";
