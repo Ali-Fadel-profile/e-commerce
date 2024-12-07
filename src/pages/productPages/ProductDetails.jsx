@@ -1,6 +1,6 @@
 import { useAuth } from "@context/GlobalState";
 import Rating from "@pages/productPages/Rating";
-import styles from "./productDetails.module.css";
+import styles from "./ProductDetails.module.css";
 import fastDeliveryIcon from "@images/icons/IconDelivery.svg";
 import returnIcon from "@images/icons/IconReturn.svg";
 import ProductSuggestions from "@pages/productPages/ProductSuggestions";
