@@ -1,6 +1,7 @@
 /* General styles for the container */
 .cart {
   width: 100%;
+  min-height: 40vh;
 }
 .cart__header {
   display: grid;

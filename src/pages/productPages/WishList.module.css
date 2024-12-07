@@ -7,6 +7,7 @@
   margin-left: auto;
   margin: 140px auto;
   margin-top: 180px;
+  min-height: 40vh;
 }
 .Whishlist_top {
   display: flex;
