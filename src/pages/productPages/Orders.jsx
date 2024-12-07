@@ -25,7 +25,7 @@ function Orders() {
             <p className={styles.ordersContainer_text}>
               Looks like you haven't added orders.
             </p>
-            <Link to="/allproducts" className={styles.shopNowButton}>
+            <Link to="/products" className={styles.shopNowButton}>
               Start Shopping
             </Link>
           </div>
