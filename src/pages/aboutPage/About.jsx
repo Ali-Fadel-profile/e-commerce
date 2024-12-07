@@ -1,5 +1,5 @@
 import styles from "./About.module.css";
-import sideImage from "@images/about/Side-image.jpg";
+import sideImage from "@images/about/Side-Image.jpg";
 import { TbMoneybag } from "react-icons/tb";
 import { IoBagHandleOutline } from "react-icons/io5";
 import { CiShop } from "react-icons/ci";
