@@ -87,7 +87,7 @@ function SignIn() {
                 Log in
               </button>
               <p>
-                <Link to="/SignIn">Forgot Password?</Link>
+                <Link to="/resetPassword">Forgot Password?</Link>
               </p>
             </div>
           </form>

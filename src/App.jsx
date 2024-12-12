@@ -18,6 +18,7 @@ import { auth } from "@services/firebase";
 import CheckOut from "@pages/productPages/CheckOut";
 import Orders from "@pages/productPages/Orders";
 import LoadingSpinner from "@components/LoadingSpinner";
+import ForgotPassword from "./components/ForgotPassword";
 
 function App() {
   const { dispatch } = useAuth();
@@ -51,6 +52,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/signUp" element={<SignUp />} />
             <Route path="/signIn" element={<SignIn />} />
+            <Route path="/resetPassword" element={<ForgotPassword />} />
             <Route path="/wishlist" element={<WishList />} />{" "}
             <Route path="/cart" element={<Cart />} />{" "}
             <Route path="/checkOut" element={<CheckOut />} />{" "}
