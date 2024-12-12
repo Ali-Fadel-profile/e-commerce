@@ -6,9 +6,10 @@ import ProductSuggestions from "./ProductSuggestions";
 import useAddToCart from "@hooks/useAddToCart";
 import { Link } from "react-router-dom";
 import useScrollToTop from "@hooks/useScrollToTop";
+import Swal from "sweetalert2";
 
 function WishList() {
-  const { wishlist } = useAuth();
+  const { wishlist, cart } = useAuth();
 
   // Collect all the categories from the wishlist
   const wishlistCategories = [
@@ -39,8 +40,24 @@ function WishList() {
   const moveToCart = useAddToCart();
 
   const handleMoveAllToCart = () => {
-    wishlist.map((product) => {
-      moveToCart(product);
+    let message;
+    const newItems = wishlist.filter(
+      (product) => !cart.some((cartItem) => cartItem.id === product.id)
+    );
+
+    if (newItems.length === 0) {
+      message = "All items already in your cart!";
+    } else {
+      newItems.forEach((product) => moveToCart(product));
+      message = "All items added to your cart!";
+    }
+
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: `${message}`,
+      showConfirmButton: false,
+      timer: 2000,
     });
   };
   return (

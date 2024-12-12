@@ -94,3 +94,6 @@ img {
   max-width: 100%;
   height: auto;
 }
+.swal2-container {
+  z-index: 2050 !important;
+}

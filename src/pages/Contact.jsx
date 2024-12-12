@@ -2,8 +2,41 @@ import styles from "./Contact.module.css";
 import phoneIcon from "@images/icons/contact/Cellphone.jpg";
 import mailIcon from "@images/icons/contact/Mail.jpg";
 import Location from "@components/layout/Location";
+import { useState } from "react";
+import Swal from "sweetalert2";
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
+  });
+  const inputChangeHandler = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const contactHandler = (event) => {
+    event.preventDefault();
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      message: "",
+    });
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "Thanks for contact us",
+      showConfirmButton: false,
+      timer: 2000,
+    });
+  };
+
   return (
     <Location>
       <div className={styles.contactUs}>
@@ -27,14 +60,42 @@ function Contact() {
           </div>
         </div>
         <div className={styles.rightColumn}>
-          <form className={styles.contactForm}>
+          <form className={styles.contactForm} onSubmit={contactHandler}>
             <div className={styles.inputRow}>
-              <input type="text" placeholder="First Name" required />
-              <input type="text" placeholder="Last Name" required />
-              <input type="email" placeholder="Email" required />
+              <input
+                type="text"
+                placeholder="First Name"
+                name="firstName"
+                value={formData.firstName}
+                onChange={inputChangeHandler}
+                required
+              />
+              <input
+                type="text"
+                placeholder="Last Name"
+                name="lastName"
+                value={formData.lastName}
+                onChange={inputChangeHandler}
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                name="email"
+                value={formData.email}
+                onChange={inputChangeHandler}
+                required
+              />
             </div>
             <div className={styles.textAreaRow}>
-              <textarea placeholder="Your message" rows="6" required></textarea>
+              <textarea
+                placeholder="Your message"
+                rows="6"
+                name="message"
+                value={formData.message}
+                onChange={inputChangeHandler}
+                required
+              ></textarea>
             </div>
             <button type="submit" className={styles.submitButton}>
               Send Message
