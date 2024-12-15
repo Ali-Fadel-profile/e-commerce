@@ -64,9 +64,3 @@ The app is hosted on Firebase Hosting. Follow these steps to deploy:
 2. Initialize Firebase Hosting with `firebase init`.  
 3. Deploy using `firebase deploy`.  
 
----
-
-## Contributions  
-Contributions are welcome! Feel free to fork this repository and submit pull requests.  
-
----
